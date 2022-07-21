@@ -101,6 +101,20 @@
 
   
   <url>
+    <loc>https://browncutie.github.io/tags/%E6%95%B0%E7%BB%84/</loc>
+    <lastmod>2022-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://browncutie.github.io/tags/%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2022-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://browncutie.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-07-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -121,21 +135,35 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://browncutie.github.io/tags/%E6%95%B0%E7%BB%84/</loc>
-    <lastmod>2022-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://browncutie.github.io/tags/%E6%A8%A1%E6%9D%BF/</loc>
-    <lastmod>2022-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
+  
+  <url>
+    <loc>https://browncutie.github.io/categories/LeetCode/</loc>
+    <lastmod>2022-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://browncutie.github.io/categories/LeetCode/%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
+    <lastmod>2022-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://browncutie.github.io/categories/LeetCode/%E6%95%B0%E7%BB%84/</loc>
+    <lastmod>2022-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://browncutie.github.io/categories/LeetCode/%E9%93%BE%E8%A1%A8/</loc>
+    <lastmod>2022-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://browncutie.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
@@ -153,34 +181,6 @@
   
   <url>
     <loc>https://browncutie.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E8%8B%B1%E8%AF%AD/</loc>
-    <lastmod>2022-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://browncutie.github.io/categories/LeetCode/</loc>
-    <lastmod>2022-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://browncutie.github.io/categories/LeetCode/%E6%95%B0%E7%BB%84/</loc>
-    <lastmod>2022-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://browncutie.github.io/categories/LeetCode/%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
-    <lastmod>2022-07-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://browncutie.github.io/categories/LeetCode/%E9%93%BE%E8%A1%A8/</loc>
     <lastmod>2022-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
