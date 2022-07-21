@@ -70,29 +70,6 @@ n  放任;放纵&lt;/p&gt;
   </entry>
   
   <entry>
-    <title>100.相同的树</title>
-    <link href="https://browncutie.github.io/LeetCode/100.%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91/"/>
-    <id>https://browncutie.github.io/LeetCode/100.%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91/</id>
-    <published>2022-07-16T00:25:42.000Z</published>
-    <updated>2022-07-18T21:25:48.252Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a class="markdownIt-Anchor" href="#题目描述"></a> 题目描述</h1><p>给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。<br />如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。</p><h1 id="题目实例"><a class="markdownIt-Anchor" href="#题目实例"></a> 题目实例</h1><p>示例 1：</p><p><img src="https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg" alt="" /></p><blockquote><p>输入：p = [1,2,3], q = [1,2,3]<br />输出：true</p></blockquote><p>示例 2：<br /><img src="https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg" alt="" /></p><blockquote><p>输入：p = [1,2], q = [1,null,2]<br />输出：false</p></blockquote><p>示例 3：<br /><img src="https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg" alt="" /></p><blockquote><p>输入：p = [1,2,1], q = [1,1,2]<br />输出：false</p></blockquote><p>提示：</p><ul><li><code>棵树上的节点数目都在范围 [0, 100] 内</code></li><li><code>-104 &lt;= Node.val &lt;= 104</code></li></ul><h1 id="题解"><a class="markdownIt-Anchor" href="#题解"></a> 题解</h1><p><strong>二叉树是递归的最好试炼场</strong><br />调用代码先要导入<code>TreeNode</code>的<a href="https://www.browncutie.com/LeetCode/TreeNode/">模板代码</a></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">L100</span>相同的树 &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isSameTree</span><span class="params">(TreeNode p, TreeNode q)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (p == <span class="literal">null</span> &amp;&amp; q == <span class="literal">null</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (p == <span class="literal">null</span> || q == <span class="literal">null</span> || p.val == q.val) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">return</span> isSameTree(p.left, q.left) &amp;&amp; isSameTree(p.right, q.right);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//以下是测试部分</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">text</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">t1</span> <span class="operator">=</span> TreeNode.creatTree(<span class="string">&quot;1,2,1&quot;</span>);</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">t2</span> <span class="operator">=</span> TreeNode.creatTree(<span class="string">&quot;1,1,2&quot;</span>);</span><br><span class="line">        System.out.println(isSameTree(t1, t2));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">L100</span>相同的树().text();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <summary type="html"> </summary>
-    
-    
-    
-    <category term="LeetCode" scheme="https://browncutie.github.io/categories/LeetCode/"/>
-    
-    <category term="二叉树" scheme="https://browncutie.github.io/categories/LeetCode/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
-    
-    
-    <category term="数组" scheme="https://browncutie.github.io/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>187.重复的DNA序列</title>
     <link href="https://browncutie.github.io/LeetCode/187.%E9%87%8D%E5%A4%8D%E7%9A%84DNA%E5%BA%8F%E5%88%97/"/>
     <id>https://browncutie.github.io/LeetCode/187.%E9%87%8D%E5%A4%8D%E7%9A%84DNA%E5%BA%8F%E5%88%97/</id>
@@ -109,6 +86,29 @@ n  放任;放纵&lt;/p&gt;
     <category term="LeetCode" scheme="https://browncutie.github.io/categories/LeetCode/"/>
     
     <category term="数组" scheme="https://browncutie.github.io/categories/LeetCode/%E6%95%B0%E7%BB%84/"/>
+    
+    
+    <category term="数组" scheme="https://browncutie.github.io/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>100.相同的树</title>
+    <link href="https://browncutie.github.io/LeetCode/100.%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91/"/>
+    <id>https://browncutie.github.io/LeetCode/100.%E7%9B%B8%E5%90%8C%E7%9A%84%E6%A0%91/</id>
+    <published>2022-07-16T00:25:42.000Z</published>
+    <updated>2022-07-18T21:25:48.252Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a class="markdownIt-Anchor" href="#题目描述"></a> 题目描述</h1><p>给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。<br />如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。</p><h1 id="题目实例"><a class="markdownIt-Anchor" href="#题目实例"></a> 题目实例</h1><p>示例 1：</p><p><img src="https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg" alt="" /></p><blockquote><p>输入：p = [1,2,3], q = [1,2,3]<br />输出：true</p></blockquote><p>示例 2：<br /><img src="https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg" alt="" /></p><blockquote><p>输入：p = [1,2], q = [1,null,2]<br />输出：false</p></blockquote><p>示例 3：<br /><img src="https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg" alt="" /></p><blockquote><p>输入：p = [1,2,1], q = [1,1,2]<br />输出：false</p></blockquote><p>提示：</p><ul><li><code>棵树上的节点数目都在范围 [0, 100] 内</code></li><li><code>-104 &lt;= Node.val &lt;= 104</code></li></ul><h1 id="题解"><a class="markdownIt-Anchor" href="#题解"></a> 题解</h1><p><strong>二叉树是递归的最好试炼场</strong><br />调用代码先要导入<code>TreeNode</code>的<a href="https://www.browncutie.com/LeetCode/TreeNode/">模板代码</a></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">L100</span>相同的树 &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isSameTree</span><span class="params">(TreeNode p, TreeNode q)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (p == <span class="literal">null</span> &amp;&amp; q == <span class="literal">null</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (p == <span class="literal">null</span> || q == <span class="literal">null</span> || p.val == q.val) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">return</span> isSameTree(p.left, q.left) &amp;&amp; isSameTree(p.right, q.right);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//以下是测试部分</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">text</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">t1</span> <span class="operator">=</span> TreeNode.creatTree(<span class="string">&quot;1,2,1&quot;</span>);</span><br><span class="line">        <span class="type">TreeNode</span> <span class="variable">t2</span> <span class="operator">=</span> TreeNode.creatTree(<span class="string">&quot;1,1,2&quot;</span>);</span><br><span class="line">        System.out.println(isSameTree(t1, t2));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="keyword">new</span> <span class="title class_">L100</span>相同的树().text();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html"> </summary>
+    
+    
+    
+    <category term="LeetCode" scheme="https://browncutie.github.io/categories/LeetCode/"/>
+    
+    <category term="二叉树" scheme="https://browncutie.github.io/categories/LeetCode/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
     
     
     <category term="数组" scheme="https://browncutie.github.io/tags/%E6%95%B0%E7%BB%84/"/>
