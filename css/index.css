@@ -5794,7 +5794,7 @@ blockquote.pullquote.right {
 #article-container .tabs > .tab-contents .tab-item-content {
   position: relative;
   display: none;
-  padding: 36px 24px;
+  padding: 30px 24px;
 }
 @media screen and (max-width: 768px) {
   #article-container .tabs > .tab-contents .tab-item-content {
