@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>添加文章 | 布朗小博客</title><meta name="keywords" content="linux"><meta name="author" content="BrownCutie"><meta name="copyright" content="BrownCutie"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="article">
+<meta property="og:title" content="添加文章">
+<meta property="og:url" content="https://browncutie.github.io/post/add/index.html">
+<meta property="og:site_name" content="布朗小博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://browncutie.github.io/static/img/linux/linux6.jpg">
+<meta property="article:published_time" content="2021-05-04T21:29:32.000Z">
+<meta property="article:modified_time" content="2023-06-26T14:47:43.835Z">
+<meta property="article:author" content="BrownCutie">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://browncutie.github.io/static/img/linux/linux6.jpg"><link rel="shortcut icon" href="/static/img/favicon.ico"><link rel="canonical" href="https://browncutie.github.io/post/add/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: BrownCutie","link":"链接: ","source":"来源: 布朗小博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '添加文章',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-06-26 22:47:43'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/static/css/style.css"><script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script><script src="https://unpkg.com/vue@3.2.47/dist/vue.global.prod.js"></script><link rel="stylesheet" href="/static/css/elm.css"><script src="/static/js/elm.full.js"></script><link href="https://unpkg.com/md-editor-v3@3.0.1/lib/style.css" rel="stylesheet" /><script src="https://unpkg.com/md-editor-v3@3.0.1/lib/md-editor-v3.umd.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="布朗小博客" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/./static/img/%E5%A4%B4%E5%83%8F.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">14</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"><i class="fa-fw fa-solid fa-share"></i><span> 知识分享</span></a></li><li><a class="site-page child" href="/categories/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"><i class="fa-fw fa-solid fa-copy"></i><span> 算法模板</span></a></li><li><a class="site-page child" href="/categories/linux/"><i class="fa-fw fa-brands fa-linux"></i><span> linux</span></a></li><li><a class="site-page child" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="fa-fw fa-solid fa-book"></i><span> 笔记</span></a></li><li><a class="site-page child" href="/categories/LeetCode/"><i class="fa-fw fa-solid fa-code"></i><span> LeetCode</span></a></li><li><a class="site-page child" href="/categories/AcWing/"><i class="fa-fw fa-solid fa-terminal"></i><span> AcWing</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的空间</span></a></div><div class="menus_item"><a class="site-page" href="/post/add"><i class="fa-fw fas fa-heart"></i><span> 写博客</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-sign-out"></i><span> 注销</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/static/img/linux/linux6.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">布朗小博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E7%9F%A5%E8%AF%86%E5%88%86%E4%BA%AB/"><i class="fa-fw fa-solid fa-share"></i><span> 知识分享</span></a></li><li><a class="site-page child" href="/categories/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"><i class="fa-fw fa-solid fa-copy"></i><span> 算法模板</span></a></li><li><a class="site-page child" href="/categories/linux/"><i class="fa-fw fa-brands fa-linux"></i><span> linux</span></a></li><li><a class="site-page child" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="fa-fw fa-solid fa-book"></i><span> 笔记</span></a></li><li><a class="site-page child" href="/categories/LeetCode/"><i class="fa-fw fa-solid fa-code"></i><span> LeetCode</span></a></li><li><a class="site-page child" href="/categories/AcWing/"><i class="fa-fw fa-solid fa-terminal"></i><span> AcWing</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 我的空间</span></a></div><div class="menus_item"><a class="site-page" href="/post/add"><i class="fa-fw fas fa-heart"></i><span> 写博客</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-sign-out"></i><span> 注销</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">添加文章<a class="post-edit-link" href="null_posts/Linux/(6)git.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-04T21:29:32.000Z" title="发表于 2021-05-05 05:29:32">2021-05-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-26T14:47:43.835Z" title="更新于 2023-06-26 22:47:43">2023-06-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/linux/">linux</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">885</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="添加文章"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout hide-aside" id="content-inner"><div id="post"><article class="post-content" id="article-container"><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<div id="app">
+<el-form label-position="top" inline=true style="max-width: 1200px" :model="form">
+<el-form-item label="标题" style="width: 410px">
+					<el-input v-model="form.title" />
+				</el-form-item>
+				<el-form-item label="添加背景图" style="width: 350px">
+					<el-upload action="#" list-type="picture-card" :auto-upload="false">
+						<el-icon>
+							<Plus />
+						</el-icon>
+						<template #file="{ file }">
+							<div>
+								<img class="el-upload-list__item-thumbnail" :src="file.url" alt="" />
+								<span class="el-upload-list__item-actions">
+									<span class="el-upload-list__item-preview" @click="handlePictureCardPreview(file)">
+										<el-icon><zoom-in /></el-icon>
+									</span>
+									<span v-if="!disabled" class="el-upload-list__item-delete"
+										@click="handleDownload(file)">
+										<el-icon>
+											<Download />
+										</el-icon>
+									</span>
+									<span v-if="!disabled" class="el-upload-list__item-delete"
+										@click="handleRemove(file)">
+										<el-icon>
+											<Delete />
+										</el-icon>
+									</span>
+								</span>
+							</div>
+						</template>
+					</el-upload>
+				</el-form-item>
+				<el-dialog v-model="dialogVisible">
+					<img w-full :src="dialogImageUrl" alt="Preview Image" />
+				</el-dialog>
+				<el-form-item label="分类" style="width: 410px">
+					<el-input v-model="form.categories" />
+				</el-form-item>
+				<el-form-item label="标签" style="width: 410px">
+					<el-input v-model="form.tags" />
+				</el-form-item>
+				<el-form-item label="关键字" style="width: 410px">
+					<el-input v-model="form.keyword" />
+				</el-form-item>
+				<el-form-item label="发布">
+					<el-switch v-model="form.publish" size="large" inline-prompt active-text="是" inactive-text="否" />
+				</el-form-item>
+				<el-form-item label="目录">
+					<el-switch v-model="form.toc" size="large" inline-prompt active-text="是" inactive-text="否" />
+				</el-form-item>
+				<el-form-item label="侧边栏">
+					<el-switch v-model="form.aside" size="large" inline-prompt active-text="是" inactive-text="否" />
+				</el-form-item>
+				<el-form-item label="描述" style="width: 1125px">
+					<el-input v-model="form.description" type="textarea" rows="4" />
+				</el-form-item>
+				<el-form-item label="内容">
+					<md-editor-v3 v-model="form.content" />
+				</el-form-item>
+<el-form-item>
+					<el-button type="primary" @click="onSubmit">提交</el-button>
+					<el-button @click="onCancel">取消</el-button>
+				</el-form-item>
+			</el-form>
+</div>
+<script>
+			const app = {
+				data() {
+					return {
+						form: {
+							name: '',
+							publish: '',
+							toc: '',
+							aside: '',
+							categories: '',
+							tags: '',
+							keyword: '',
+							description: '',
+							content: ''
+						},
+					};
+				},
+				methods: {
+					onSubmit() {
+						console.log('submit!')
+						axios.get('http://127.0.0.1:8088/post/add', this.form)
+							.then(function(response) {
+								console.log(response);
+							})
+							.catch(function(error) {
+								console.log(error);
+							});
+						alert("添加成功")
+						location.href = "/"
+					},
+					onCancel() {
+						location.href = "/"
+					},
+				}
+			};
+const head=document.getElementById('page-header')
+head.style.height='60px'
+head.style.background='linear-gradient(to right, #12c2e9, #c471ed, #f64f59)'
+Vue.createApp(app).use(ElementPlus).use(MdEditorV3).mount("#app");
+get();
+function get() {
+				const foot = document.querySelectorAll('.relatedPosts')
+				if (foot.length > 0) {
+					foot.forEach(function(a) {
+						a.remove()
+					})
+					document.getElementById('pagination').remove()
+					document.getElementById('post-info').remove()
+					document.querySelectorAll('.tag_share').forEach(function(a) {
+						a.remove()
+					})
+                    const post=document.getElementById('post')
+post.setAttribute("style","width:1040px !important")
+console.log(post)
+					return false;
+				}
+				setTimeout(get, 200);
+			}
+</script>
+<p><code>git restore --stage XX</code>        将文件XX从缓冲区删除</p>
+<p><code>git rm --cached XX</code>                表示git不需要管理这个文件,同时也将文件XX从缓冲区删除</p>
+<p><code>git config --global user.name xxx</code>：设置全局用户名，信息记录在~/.gitconfig文件中<br>
+git config --global user.email <a href="mailto:xxx@xxx.com">xxx@xxx.com</a>：设置全局邮箱地址，信息记录在~/.gitconfig文件中<br>
+git init：将当前目录配置成git仓库，信息记录在隐藏的.git文件夹中<br>
+git add XX：将XX文件添加到暂存区<br>
+git add .：将所有待加入暂存区的文件加入暂存区<br>
+git rm --cached XX：将文件从仓库索引目录中删掉<br>
+git commit -m “给自己看的备注信息”：将暂存区的内容提交到当前分支<br>
+git status：查看仓库状态<br>
+git diff XX：查看XX文件相对于暂存区修改了哪些内容<br>
+git log：查看当前分支的所有版本<br>
+git log --pretty=oneline 清爽版 显示在一行<br>
+git reflog：查看HEAD指针的移动历史（包括被回滚的版本）<br>
+git reset --hard HEAD^ 或 git reset --hard HEAD~：将代码库回滚到上一个版本<br>
+git reset --hard HEAD^^：往上回滚两次，以此类推<br>
+git reset --hard HEAD~100：往上回滚100个版本<br>
+git reset --hard 版本号：回滚到某一特定版本<br>
+git checkout — XX或git restore XX：将XX文件尚未加入暂存区的修改全部撤销<br>
+git remote add origin <a href="mailto:git@git.acwing.com">git@git.acwing.com</a>:xxx/XXX.git：将本地仓库关联到远程仓库<br>
+git push -u (第一次需要-u以后不需要)：将当前分支推送到远程仓库<br>
+git push origin branch_name：将本地的某个分支推送到远程仓库<br>
+git clone <a href="mailto:git@git.acwing.com">git@git.acwing.com</a>:xxx/XXX.git：将远程仓库XXX下载到当前目录下<br>
+git checkout -b branch_name：创建并切换到branch_name这个分支<br>
+git branch：查看所有分支和当前所处分支<br>
+git checkout branch_name：切换到branch_name这个分支<br>
+git merge branch_name：将分支branch_name合并到当前分支上<br>
+git branch -d branch_name：删除本地仓库的branch_name分支<br>
+git branch branch_name：创建新分支<br>
+git push --set-upstream origin branch_name：设置本地的branch_name分支对应远程仓库的branch_name分支<br>
+git push -d origin branch_name：删除远程仓库的branch_name分支<br>
+git pull：将远程仓库的当前分支与本地仓库的当前分支合并<br>
+git pull origin branch_name：将远程仓库的branch_name分支与本地仓库的当前分支合并<br>
+git branch --set-upstream-to=origin/branch_name1 branch_name2：将远程的branch_name1分支与本地的branch_name2分支对应<br>
+git checkout -t origin/branch_name 将远程的branch_name分支拉取到本地<br>
+git stash：将工作区和暂存区中尚未提交的修改存入栈中<br>
+git stash apply：将栈顶存储的修改恢复到当前分支，但不删除栈顶元素<br>
+git stash drop：删除栈顶存储的修改<br>
+git stash pop：将栈顶存储的修改恢复到当前分支，同时删除栈顶元素<br>
+git stash list：查看栈中所有元素</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/TreeNode/"><img class="prev-cover" src="/static/img/LeetCode/leetcode.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">TreeNode</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/linux/(%E4%B8%80)%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" title="(1)基础命令"><img class="cover" src="/static/img/linux/linux1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-09</div><div class="title">(1)基础命令</div></div></a></div><div><a href="/linux/tmux/" title="(二)tmux"><img class="cover" src="/static/img/linux/linux2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-29</div><div class="title">(二)tmux</div></div></a></div><div><a href="/linux/vim/" title="(三)vim"><img class="cover" src="/static/img/linux/linux3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-01-06</div><div class="title">(三)vim</div></div></a></div><div><a href="/linux/shell%E4%B8%8A/" title="(四)shell上"><img class="cover" src="/static/img/linux/linux4.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-11</div><div class="title">(四)shell上</div></div></a></div><div><a href="/linux/shell%E4%B8%8B/" title="(五)shell下"><img class="cover" src="/static/img/linux/linux5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-11</div><div class="title">(五)shell下</div></div></a></div><div><a href="/linux/(%E5%85%AB)%E7%AE%A1%E9%81%93%E3%80%81%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="(8)(8)管道、环境变量与常用命令"><img class="cover" src="/static/img/linux/linux1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-09</div><div class="title">(8)(8)管道、环境变量与常用命令</div></div></a></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By BrownCutie</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">很高兴认识你哟~欢迎来到<a target="_blank" rel="noopener" href="https://www.BrownCutie.com/">布朗的博客</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><!--button#darkmode(type = "button" title = _p('rightside.night_mode_title'))--><!--i.fas.fa-adjust--><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script><script src="/static/js/style.js"></script><script src="/js/sun_moon.js" async></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
